@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANTIN SEKOLAH Landing Page</title>
+</head>
+<body>
+
+    <!-- ini bagian header dan navbar -->
+    <header>
+    <a href="#" class="logo">
+        <img src="./logo.png" alt="Logo">
+    </a>
+
+    <!-- Tombol menu untuk mobile -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="navbar">
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+
+    <!-- ini section beranda -->
+    <section id="beranda">
+
+        <!-- pemisah bagian isi singkat terdiri dari judul besar dan paragraf singkat -->
+        <div class="isi">
+            <h1>Beranda</h1>
+            <p>Buatlah Kantin mu menjadi inovasi digital terbaru!!</p>
+        </div>
+
+        <!-- ini ada foto, dan tombol -->
+        <img src="./ilustrasi.jpeg" width ="500 " height="500"><br>
+        
+        <a href="#" class="btn">Daftar Sekarang!!</a>
+    </section>
+
+    <!-- ini section layanan -->
+    <section id="layanan">
+
+        <!-- judul -->
+        <h1>Mengapa aplikasi kami?</h1>
+
+        <!-- card buat ngebungkus hal -->
+        <div class="card">
+
+            <!-- ada foto pake img lokasi file satu dengan html -->
+            <img src="./mana.jpg" width ="300" height="200">
+
+            <!-- pemisah untuk isi card, ada judul tipe 2 dan paragraf pendek, seterusnya sampai total tiga card.. -->
+            <div class="isi">
+                <h2>Pesan online dan pickup langsung</h2>
+                <p>Anda bisa melakukan pemesanan menu kantin sekolah melalui website kami, dimanapun dan kapanpun!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./variasi.jpg" width ="300" height="150">
+            <div class="isi">
+                <h2>Tersedia seluruh menu makanan dan minuman di kantin.</h2>
+                <p>Memesan makanan dan minuman di sekolah anda secara online!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./pembayaran.jpeg" width ="300" height="150">
+            <div class="isi">
+                <h2>Pembayaran yang cepat dan mudah</h2>
+                <p>Pembayaran secara digital, dan metode top up saldo yang bervariasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section tentang -->
+    <section id="tentang">
+        <h1>Tentang Kami</h1>
+
+        <!-- pemisah buat judul paddle.inc dan paragraf -->
+        <div>
+            <strong>Kantin Sekolah.inc</strong><br>
+            <p>Perusahaan berdiri sejak tahun 2025, Berlokasikan di Tangerang. Perusahaan ini berfokus kepada Sekolah di seluruh Indonesia. Memiliki visi misi untuk memberikan layanan pemesanan makanan dan minuman disekolah secara online tanpa perlu mengantri.</p>
+        </div>
+    </section>
+
+    <!-- ini section footer -->
+    <footer id="footer">
+
+        <!-- pemisah untuk bagian contact -->
+        <div class="contact">
+
+            <!-- ada img, lalu alamat, no contact, email yang nantinya bisa diklik, setiap barisnya dipisah pakai <br> -->
+            <img src="./logo.png" width ="250" height="250"><br>
+            Tangerang, Medang, Jakarta, Indonesia<br>
+            +6287 7777 777<br>
+            Email: <a href="mailto:kantinsekolah@gmail.com">kantinsekolah@gmail.com</a>
+        </div>
+    </footer>
+
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

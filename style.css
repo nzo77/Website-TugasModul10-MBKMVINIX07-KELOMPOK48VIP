@@ -1,0 +1,337 @@
+/* ======== RESET DASAR ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+    background-color: #fffdf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ======== HEADER & NAVBAR ======== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc33;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* ======== SECTION BERANDA ======== */
+#beranda {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #fff8e1, #fffdf6);
+}
+
+#beranda .isi h1 {
+    font-size: 40px;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+#beranda .isi p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#beranda img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* ======== SECTION LAYANAN ======== */
+#layanan {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#layanan h1 {
+    font-size: 32px;
+    color: #ff9900;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: inline-block;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card .isi {
+    padding: 20px;
+}
+
+.card .isi h2 {
+    color: #ff6600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card .isi p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* ======== SECTION TENTANG ======== */
+#tentang {
+    background-color: #fff8e1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#tentang h1 {
+    font-size: 32px;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+#tentang div {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background-color: #ffcc33;
+    color: #333;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer img {
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #beranda .isi h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ======== VERSI MOBILE (MAX 480PX) ======== */
+@media (max-width: 480px) {
+
+    /* --- Header & Navbar --- */
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    /* --- Beranda --- */
+    #beranda {
+        padding: 60px 10px;
+    }
+
+    #beranda .isi h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    #beranda .isi p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    /* --- Layanan --- */
+    #layanan {
+        padding: 50px 10px;
+    }
+
+    #layanan h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .card .isi h2 {
+        font-size: 18px;
+    }
+
+    .card .isi p {
+        font-size: 14px;
+    }
+
+    /* --- Tentang --- */
+    #tentang {
+        padding: 60px 10px;
+    }
+
+    #tentang h1 {
+        font-size: 26px;
+    }
+
+    #tentang div {
+        font-size: 14px;
+    }
+
+    /* --- Footer --- */
+    footer {
+        padding: 30px 10px;
+    }
+
+    footer img {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* ======== MENU HAMBURGER (VERSI MOBILE) ======== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Sembunyikan nav di mobile awalnya */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffcc33;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        top: 90px; /* di bawah header */
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
+}
